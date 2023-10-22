@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="/BootStrap/css/bootstrap.min.css">
+    <script src="/BootStrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- google icon -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/responesive.css">
+    <!-- boxicon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- link js -->
+    <script src="/JS/main.js" defer></script>
+    
+    <title>Laptop</title>
+</head>
+<body>
+    <!-- first nav bar  -->
+    <div class="container-fluid d-flex align-items-center justify-content-end bg-secondary "
+        style="height: fit-content;">
+        <ul class="nav " style="height: fit-content;">
+            <li class="nav-item dropdown fs-6">
+                <a href="#" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">My Account</a>
+                <ul class="dropdown-menu ">
+                    <li><a class="dropdown-item" href="./login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="./register.html">Register</a></li>
+                </ul>
+            </li>
+            <li class="nav-item fs-6 "><a href="#" class="nav-link text-white">About</a></li>
+        </ul>
+    </div>
+    <!-- second nav bar -->
+    <div class="container-fluid bg-black" id="nav2" style="height: auto;">
+        <div class="row ">
+            <div class="col-12 col-md-6 col-xl-4 d-flex justify-content-center align-items-center "
+                onclick="ChangePage_Home()">
+                <img src="/Image/pic3.avif" alt="" id="pic2">
+                <p class="ms-3 text-dark fs-3 text-white" id="logo-name">ComputerShop</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 d-flex justify-content-center align-items-center">
+                <div class="input-group mb-3 ">
+                    <input type="text" class="form-control" placeholder="Search" id="search" onclick="SearchItem()">
+                    <button class="btn btn-warning" onclick="SearchItem()">SEARCH</button>
+                </div>
+            </div>
+            <div class="col-12 col-xl-4 d-flex justify-content-center align-items-center ">
+                <box-icon name='phone-call' color="white" size="md"></box-icon>
+                <p class="text-white ms-2">Contact 011272087</p>
+                <span>
+                    <box-icon name='store-alt' color="white" size="md" class="ms-2"></box-icon>
+                    <span class="badge bg-danger" id="shoptxt">0</span>
+                </span>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <ul class="nav" id="list1">
+                    <li class="nav-item d-flex ">
+                        <box-icon name='laptop' color="white" size="md"></box-icon>
+                        <a href="./laptop.html" class="nav-link text-white" id="link1">LAPTOP</a>
+                    </li>
+                    <li class="nav-item d-flex">
+                        <box-icon name='desktop' color="white" size="md"></box-icon>
+                        <a href="./desktop.html" class="nav-link text-white" id="link2">DESKTOP</a>
+                    </li>
+                    <li class="nav-item d-flex text-white">
+                        <box-icon name='discord-alt' type='logo' color="white" size="md"></box-icon>
+                        <a href="./gaming.html" class="nav-link text-white" id="link3">GAMING</a>
+                    </li>
+                    <li class="nav-item d-flex">
+                        <box-icon name='headphone' color="white" size="md"></box-icon>
+                        <a href="#" class="nav-link text-white">PERIPHERAL</a>
+                    </li>
+                    <li class="nav-item d-flex">
+                        <box-icon name='wrench' color="white" size="md"></box-icon>
+                        <a href="#" class="nav-link text-white">PC BUILDER</a>
+                    </li>
+                </ul>
+                <div id="list2">
+                    <box-icon name='menu' color="white" size="md" class="dropdown " type="button"
+                        id="dropdownMenuButton" data-bs-toggle="dropdown"></box-icon>
+                    <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#" onclick="ChangePage_Home()">Home</a></li>
+                        <li><a class="dropdown-item" href="./laptop.html">Laptop</a></li>
+                        <li><a class="dropdown-item" href="./desktop.html">Desktop</a></li>
+                        <li><a class="dropdown-item" href="./gaming.html">Gaming</a></li>
+                        <li><a class="dropdown-item" href="#">Smart Phone</a></li>
+                        <li><a class="dropdown-item" href="#">PC Components</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end second br -->
+    <!-- main contain -->
+    <div style="height: 50px; background-color: gainsboro; padding-top: 10px; margin-top: 10px;">
+        <h5 class="fs-5">Desktop</h5>
+    </div>
+    <div class="container mt-2" style="width: auto; height: auto;" id="row">
+        <div class="row ">
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="card h-100" style="width: 9rem">
+                    <div class="card-body">
+                        <img src="/Image/des1.jpg" alt="" class="card-img-top">
+                        <h5 class="card-title text-center">Acer</h5>
+                        <span class="d-flex justify-content-center justify-content-between">
+                            <button class="btn btn-primary" id="btn1">+</button>
+                            <button class="btn btn-danger" id="btn2" >-</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="card h-100" style="width: 9rem">
+                    <div class="card-body">
+                        <img src="/Image/des2.jpg" alt="" class="card-img-top">
+                        <h5 class="card-title text-center">Aoc</h5>
+                        <span class="d-flex justify-content-center justify-content-between">
+                            <button class="btn btn-primary" id="btn1">+</button>
+                            <button class="btn btn-danger" id="btn2" >-</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="card h-100" style="width: 9rem ">
+                    <div class="card-body">
+                        <img src="/Image/des3.jpg" alt="" class="card-img-top ">
+                        <h5 class="card-title text-center">Dell</h5>
+                        <span class="d-flex justify-content-center justify-content-between">
+                            <button class="btn btn-primary" id="btn1">+</button>
+                            <button class="btn btn-danger" id="btn2" >-</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4  col-sm-6">
+                <div class="card h-100" style="width: 9rem">
+                    <div class="card-body">
+                        <img src="/Image/des4.jpg" alt="" class="card-img-top">
+                        <h5 class="card-title text-center">Mac</h5>
+                        <span class="d-flex justify-content-center justify-content-between">
+                            <button class="btn btn-primary" id="btn1">+</button>
+                            <button class="btn btn-danger" id="btn2" >-</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4  col-sm-6">
+                <div class="card h-100" style="width: 9rem">
+                    <div class="card-body">
+                        <img src="/Image/des5.jpg" alt="" class="card-img-top">
+                        <h5 class="card-title text-center">Dell</h5>
+                        <span class="d-flex justify-content-center justify-content-between">
+                            <button class="btn btn-primary" id="btn1">+</button>
+                            <button class="btn btn-danger" id="btn2" >-</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+                <div class="card h-100" style="width: 9rem">
+                    <div class="card-body">
+                        <img src="/Image/des6.jpg" alt="" class="card-img-top">
+                        <h5 class="card-title text-center">Acer</h5>
+                        <span class="d-flex justify-content-center justify-content-between">
+                            <button class="btn btn-primary" id="btn1">+</button>
+                            <button class="btn btn-danger" id="btn2" >-</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end desktop content -->
+    <!-- footer -->
+    <div class="container-fluid mt-5" id="footer">
+        <div class="card mx-5" id="card">
+            <div class="row mb-4 ">
+                <div class="col-lg-3 col-md-12 col-sm-12 ">
+                    <div class="footer-text pull-left">
+                        <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center"
+                            onclick="ChangePage_Home()">
+                            <img src="/Image/pic3.avif" alt="" id="pic2" class="ms-5">
+                            <p class="ms-3 text-dark fs-6 text-white" id="logo-name">ComputerShop</p>
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi non
+                            pariatur numquam animi nam at impedit odit nisi.</p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <h5 class="heading fs-6">Services</h5>
+                    <ul>
+                        <li>Laptop -</li>
+                        <li>Desktop</li>
+                        <li>Gaming</li>
+                        <li>Monitor</li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <h5 class="heading fs-6">Information</h5>
+                    <ul class="card-text">
+                        <li>Brand</li>
+                        <li>Site Map</li>
+                        <li>Smart Office</li>
+                        <li>Retail</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <h5 class="heading fs-6">Company</h5>
+                    <ul class="card-text">
+                        <li>About Us</li>
+                        <li>Blog</li>
+                        <li>Contact</li>
+                        <li>Join Us</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="divider mb-4">
+            </div>
+            <div class="row" style="font-size:10px;">
+                <div class="col-6 col-sm-6 col-xs-6">
+                    <div class="pull-left">
+                        <p> 2023 ComputerShop</p>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-xs-6">
+                    <div class="pull-right mr-4 d-flex policy">
+                        <span>Terms of Use</span>
+                        <span>Privacy Policy</span>
+                        <span>Cookie Policy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
